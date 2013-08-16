@@ -59,7 +59,7 @@ public class XrayMachineListener implements Listener {
     private void alertAdminsOfXray(String name) {
         for (Player p : plugin.getServer().getOnlinePlayers()) {
             if (p.hasPermission("xraymachinenotifier.notify")) {
-                p.sendMessage(ChatColor.RED + "[XML]" + ChatColor.WHITE + name + " possibily used an xray machine.");
+                p.sendMessage(ChatColor.RED + "[XMN]" + ChatColor.WHITE + name + " possibily used an xray machine.");
             }
         }
         plugin.getLogger().info(name + " possibily used an xray machine.");
