@@ -1,0 +1,17 @@
+name: ${name}
+version: ${version}
+description: A plugin to alert players with permission of use of vanilla xray exploits.
+author: Lanky_Lord
+main: net.lankylord.xraymachinenotifier.XrayMachineNotifier
+
+permissions:
+  xraymachinenotifier.*:
+    description: All Xray Machine Notifier permissions.
+    default: OP
+    children:
+      xraymachinenotifier.exempt: true
+      xraymachinenotifier.notify: true
+  xraymachinenotifier.exempt:
+    description: Exemption from xray machine checks.
+  xraymachinenotifier.notify:
+    description: Alerted when player is detected using an xray machine.
